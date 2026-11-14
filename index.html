@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Fast Services Car Rental | Kolkata's Elite Luxury Car & Chauffeur Fleet</title>
+  <meta name="description" content="Kolkata's leading luxury car rental and executive chauffeur concierge in Park Street. Featuring Mercedes-Benz E-Class, BMW 5 Series, Toyota Fortuner, and VIP wedding convoys.">
+  
+  <!-- Favicon Suite -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Bespoke Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-index">
+
+<!-- Executive Floating Glass Header -->
+<header class="site-header">
+  <div class="header-inner container">
+    <a href="index.html" class="brand-link">
+      <img src="assets/images/logo.png" alt="Fast Services Car Rental Logo" class="brand-logo" width="44" height="44">
+      <div class="brand-meta">
+        <span class="brand-title">FAST SERVICES</span>
+        <span class="brand-sub">LUXURY FLEET &#8226; PARK STREET</span>
+      </div>
+    </a>
+    
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <a href="index.html" class="nav-link active">Home</a><a href="fleet.html" class="nav-link ">Executive Fleet</a><a href="services.html" class="nav-link ">Concierge Services</a><a href="about.html" class="nav-link ">Our Heritage</a><a href="reviews.html" class="nav-link ">Client Reviews</a><a href="contact.html" class="nav-link ">Contact & Book</a>
+    </nav>
+    
+    <div class="header-actions">
+      <div class="social-circle-icons">
+        <a href="tel:+917980952635" class="header-icon-btn" aria-label="Call Fast Services Hotline"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/917980952635?text=Hello%20Fast%20Services%20Car%20Rental%2C%20I%20would%20like%20to%20inquire%20about%20a%20luxury%20car%20booking." target="_blank" rel="noopener" class="header-icon-btn" aria-label="WhatsApp Fast Services"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <a href="contact.html" class="btn-cta-pill">Reserve Chauffeur</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer-content">
+    <div class="drawer-header">
+      <div class="brand-meta">
+        <span class="brand-title">FAST SERVICES</span>
+        <span class="brand-sub">LUXURY FLEET &#8226; PARK STREET</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html" class="drawer-link active">Home</a><a href="fleet.html" class="drawer-link ">Executive Fleet</a><a href="services.html" class="drawer-link ">Concierge Services</a><a href="about.html" class="drawer-link ">Our Heritage</a><a href="reviews.html" class="drawer-link ">Client Reviews</a><a href="contact.html" class="drawer-link ">Contact & Book</a>
+    </div>
+    <div class="drawer-cta-wrapper">
+      <a href="https://wa.me/917980952635?text=Hello%20Fast%20Services%20Car%20Rental%2C%20I%20would%20like%20to%20reserve%20a%20chauffeur-driven%20luxury%20vehicle." target="_blank" rel="noopener" class="btn-hero-primary w-full">
+        <i class="fab fa-whatsapp"></i> Instant WhatsApp Dispatch
+      </a>
+      <p class="drawer-hotline"><i class="fas fa-phone-alt"></i> 24/7 Hotline: +91 79809 52635</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- HERO SECTION: 16:9 GEMINI CINEMATIC VIDEO WITH CONTROL & COMPACT TELEMETRY -->
+<section class="hero-section" id="hero">
+  <div class="video-container">
+    <video autoplay loop muted playsinline id="heroVideo" poster="assets/images/hero-poster.jpg" class="hero-video-media" preload="metadata">
+      <source src="assets/videos/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-gradient-overlay"></div>
+    <button class="video-control-btn" id="videoToggle" aria-label="Pause or Play Hero Background Video">
+      <i class="fas fa-pause"></i>
+    </button>
+  </div>
+  
+  <div class="container hero-content-wrapper">
+    <div class="hero-badge animate-fade-in">
+      <span class="live-beacon"></span>
+      <span class="hero-badge-text">PARK STREET &#8226; VIP CHAUFFEUR DISPATCH ACTIVE</span>
+    </div>
+    
+    <h1 class="hero-title animate-fade-in-up">
+      Kolkata’s Premier <br>
+      <span class="dynamic-typewriter" id="typewriterText">Luxury Car Fleet.</span>
+    </h1>
+    
+    <p class="hero-lead animate-fade-in-up">
+      Impeccably maintained Mercedes-Benz, BMW, and Toyota executive vehicles with certified personal chauffeurs. Engineered for corporate leaders, diplomatic escorts, and royal wedding celebrations.
+    </p>
+    
+    <div class="hero-cta-group animate-fade-in-up">
+      <a href="#booking-calculator" class="btn-hero-primary">
+        <i class="fas fa-sliders-h"></i> Plan Executive Journey
+      </a>
+      <a href="https://wa.me/917980952635?text=Hello%20Fast%20Services%20Car%20Rental%2C%20I%20would%20like%20to%20book%20a%20luxury%20chauffeur%20in%20Kolkata." target="_blank" rel="noopener" class="btn-hero-secondary">
+        <i class="fab fa-whatsapp"></i> Instant WhatsApp Dispatch
+      </a>
+    </div>
+    
+    <!-- Hero Telemetry Metrics (Strict 2x2 Grid on Mobile fitting above 844px fold) -->
+    <div class="hero-telemetry-grid animate-fade-in-up">
+      <div class="telemetry-card">
+        <div class="stat-number-wrap">
+          <span class="stat-counter" data-target="4.9">0</span><span class="stat-suffix">/5</span>
+        </div>
+        <span class="stat-label">Google Rating</span>
+      </div>
+      <div class="telemetry-card">
+        <div class="stat-number-wrap">
+          <span class="stat-counter" data-target="15">0</span><span class="stat-suffix">+</span>
+        </div>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div class="telemetry-card">
+        <div class="stat-number-wrap">
+          <span class="stat-counter" data-target="45">0</span><span class="stat-suffix">+</span>
+        </div>
+        <span class="stat-label">Pristine Fleet Cars</span>
+      </div>
+      <div class="telemetry-card">
+        <div class="stat-number-wrap">
+          <span class="stat-counter" data-target="100">0</span><span class="stat-suffix">%</span>
+        </div>
+        <span class="stat-label">On-Time Reliability</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHT SHOWCASE: SIGNATURE VEHICLES -->
+<section class="section section-fleet-highlight" id="fleet-preview">
+  <div class="container">
+    <div class="section-header text-center">
+      <div class="section-eyebrow">DISTINGUISHED AUTOMOTIVE PORTFOLIO</div>
+      <h2 class="section-title">The Executive Collection</h2>
+      <p class="section-lead">Sanitized before every dispatch, equipped with high-speed Wi-Fi, refreshments, and driven by background-checked English-speaking chauffeurs.</p>
+    </div>
+    
+    <div class="portfolio-grid">
+      <!-- Card 1: Mercedes-Benz E-Class -->
+      <div class="vehicle-card tilt-card">
+        <div class="vehicle-img-wrap">
+          <img src="assets/images/car-mercedes-eclass.jpg" alt="Mercedes-Benz E-Class Luxury Sedan" class="vehicle-img" loading="lazy">
+          <span class="vehicle-tag">Flagship Sedan</span>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-header">
+            <h3 class="vehicle-name">Mercedes-Benz E-Class</h3>
+            <span class="vehicle-archetype">Executive Saloon</span>
+          </div>
+          <p class="vehicle-desc">Unmatched comfort with reclining ambient-lit rear seats, rear sunblinds, and whisper-quiet suspension for Kolkata city or highway transit.</p>
+          <div class="vehicle-amenities">
+            <span><i class="fas fa-users"></i> 3 VIP Guests</span>
+            <span><i class="fas fa-suitcase"></i> 2 Large Bags</span>
+            <span><i class="fas fa-wifi"></i> Onboard 5G</span>
+            <span><i class="fas fa-tint"></i> Bottled Perrier</span>
+          </div>
+          <div class="vehicle-card-action">
+            <a href="contact.html?car=Mercedes-Benz+E-Class" class="btn-card-inquire">Reserve Mercedes <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: BMW 5 Series -->
+      <div class="vehicle-card tilt-card">
+        <div class="vehicle-img-wrap">
+          <img src="assets/images/car-bmw-5series.jpg" alt="BMW 5 Series Executive Sport Sedan" class="vehicle-img" loading="lazy">
+          <span class="vehicle-tag">Sport Executive</span>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-header">
+            <h3 class="vehicle-name">BMW 5 Series</h3>
+            <span class="vehicle-archetype">Dynamic Luxury</span>
+          </div>
+          <p class="vehicle-desc">Assertive road presence with Harman Kardon acoustic sound, adaptive dampers, and executive comfort suited for high-level business executives.</p>
+          <div class="vehicle-amenities">
+            <span><i class="fas fa-users"></i> 3 VIP Guests</span>
+            <span><i class="fas fa-suitcase"></i> 2 Large Bags</span>
+            <span><i class="fas fa-music"></i> Premium Audio</span>
+            <span><i class="fas fa-shield-alt"></i> GPS Tracked</span>
+          </div>
+          <div class="vehicle-card-action">
+            <a href="contact.html?car=BMW+5+Series" class="btn-card-inquire">Reserve BMW <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Toyota Fortuner 4x4 -->
+      <div class="vehicle-card tilt-card">
+        <div class="vehicle-img-wrap">
+          <img src="assets/images/car-toyota-fortuner.jpg" alt="Toyota Fortuner 4x4 Luxury SUV" class="vehicle-img" loading="lazy">
+          <span class="vehicle-tag">VIP Escort SUV</span>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-header">
+            <h3 class="vehicle-name">Toyota Fortuner 4x4</h3>
+            <span class="vehicle-archetype">Rugged Luxury SUV</span>
+          </div>
+          <p class="vehicle-desc">Commanding ground clearance and robust presence. Favored for high-profile delegatory convoys, industrial visits, and West Bengal outstation excursions.</p>
+          <div class="vehicle-amenities">
+            <span><i class="fas fa-users"></i> 6 Passengers</span>
+            <span><i class="fas fa-suitcase"></i> 4 Bags</span>
+            <span><i class="fas fa-mountain"></i> 4x4 Terrain</span>
+            <span><i class="fas fa-bolt"></i> Fast USB-C</span>
+          </div>
+          <div class="vehicle-card-action">
+            <a href="contact.html?car=Toyota+Fortuner" class="btn-card-inquire">Reserve Fortuner <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-footer-cta text-center mt-4">
+      <a href="fleet.html" class="btn-hero-secondary">Explore Entire 8-Vehicle Fleet <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE LUXURY JOURNEY PLANNER & VALUE ESTIMATOR -->
+<section class="section section-alt" id="booking-calculator">
+  <div class="container">
+    <div class="calculator-wrapper">
+      <div class="calculator-info">
+        <div class="section-eyebrow">CUSTOM JOURNEY ARCHITECT</div>
+        <h2 class="calculator-title">Bespoke Travel Estimator</h2>
+        <p class="calculator-lead">Configure your luxury journey across Kolkata, CCU Airport, or West Bengal heritage destinations. Receive an instant tailored itinerary via our 24/7 Park Street dispatch concierge.</p>
+        
+        <div class="concierge-features-list">
+          <div class="c-feature-item">
+            <div class="c-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="c-text"><strong>All-Inclusive Protocol:</strong> Uniformed chauffeur, vehicle fuel, tolls, and parking handled seamlessly.</div>
+          </div>
+          <div class="c-feature-item">
+            <div class="c-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="c-text"><strong>Flight Tracking Precision:</strong> Chauffeur monitors your inbound flight landing at CCU for zero wait time.</div>
+          </div>
+          <div class="c-feature-item">
+            <div class="c-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="c-text"><strong>Corporate GST Billing:</strong> Direct invoicing for corporate accounts and retainer clients.</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="calculator-card glass-panel">
+        <h3 class="calc-card-title"><i class="fas fa-calculator text-cyan"></i> Journey Planner</h3>
+        
+        <form id="journeyPlannerForm" class="journey-form">
+          <div class="form-group">
+            <label for="calcVehicle">Select Vehicle Segment</label>
+            <select id="calcVehicle" class="form-control" required>
+              <option value="Mercedes-Benz E-Class" selected>Mercedes-Benz E-Class (Executive Saloon)</option>
+              <option value="BMW 5 Series">BMW 5 Series (Sport Saloon)</option>
+              <option value="Audi A6 Matrix">Audi A6 Matrix (Luxury Saloon)</option>
+              <option value="Toyota Innova Crysta ZX">Toyota Innova Crysta ZX (Executive MUV)</option>
+              <option value="Toyota Fortuner 4x4">Toyota Fortuner 4x4 (VIP SUV)</option>
+              <option value="Royal Vintage Classic">Royal Vintage Classic (Wedding Convoys)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="calcServiceType">Service Scope</label>
+            <select id="calcServiceType" class="form-control" required>
+              <option value="Airport Fast-Track Transfer" selected>Airport Fast-Track Transfer (Kolkata CCU)</option>
+              <option value="City Executive 8-Hours / 80km">City Executive Package (8 Hours / 80 KM)</option>
+              <option value="Full Day Concierge 12-Hours">Full Day VIP Concierge (12 Hours / 120 KM)</option>
+              <option value="Wedding Convoy & Bridal Drop">Grand Wedding Convoy & Bridal Entrance</option>
+              <option value="Outstation Excursion">Outstation Travel (Digha / Mandarmani / Shantiniketan)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="calcDate">Preferred Date</label>
+            <input type="date" id="calcDate" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="calcGuests">Estimated Guests / Luggage</label>
+            <div class="grid-2col">
+              <select id="calcGuests" class="form-control">
+                <option value="1-2 Guests">1-2 Guests</option>
+                <option value="3-4 Guests">3-4 Guests</option>
+                <option value="5-7 Guests">5-7 Guests</option>
+              </select>
+              <select id="calcBags" class="form-control">
+                <option value="1-2 Bags">1-2 Large Bags</option>
+                <option value="3-5 Bags">3-5 Bags</option>
+                <option value="Event Luggage">Wedding / Event Wardrobe</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="calc-output-box">
+            <div class="calc-output-label">RECOMMENDED FLEET CONFIGURATION</div>
+            <div class="calc-output-summary" id="calcSummary">Mercedes-Benz E-Class &#8226; Airport Fast-Track Transfer</div>
+            <div class="calc-output-note">Complimentary cold water, 5G Wi-Fi & umbrella service included.</div>
+          </div>
+          
+          <button type="button" id="btnDispatchPlanner" class="btn-hero-primary w-full">
+            <i class="fab fa-whatsapp"></i> Confirm Availability on WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAUFFEUR PROTOCOLS & EXCELLENCE -->
+<section class="section section-protocol" id="concierge-standards">
+  <div class="container">
+    <div class="section-header text-center">
+      <div class="section-eyebrow">WHITE-GLOVE DISCIPLINE</div>
+      <h2 class="section-title">The Five-Star Chauffeur Standard</h2>
+      <p class="section-lead">A luxury car is only as exceptional as the pilot behind the wheel. Every Fast Services chauffeur undergoes extensive hospitality and defensive driving protocols.</p>
+    </div>
+    
+    <div class="protocol-grid">
+      <div class="protocol-card">
+        <div class="protocol-icon"><i class="fas fa-id-badge"></i></div>
+        <h3>Police-Verified & Trained</h3>
+        <p>100% background-checked drivers with minimum 7 years of luxury driving experience across Eastern India highways.</p>
+      </div>
+      
+      <div class="protocol-card">
+        <div class="protocol-icon"><i class="fas fa-vest"></i></div>
+        <h3>Bespoke Uniform Protocol</h3>
+        <p>Impeccably groomed in formal attire, crisp shirts, formal ties, and white driving gloves upon client request.</p>
+      </div>
+      
+      <div class="protocol-card">
+        <div class="protocol-icon"><i class="fas fa-route"></i></div>
+        <h3>Traffic-Smart Navigation</h3>
+        <p>Real-time telematics and intimate knowledge of Kolkata bypasses, VIP corridors, and airport express routes.</p>
+      </div>
+      
+      <div class="protocol-card">
+        <div class="protocol-icon"><i class="fas fa-user-secret"></i></div>
+        <h3>Strict Client Discretion</h3>
+        <p>Non-disclosure discipline guaranteed. Absolute privacy for boardroom phone calls, VIP conversations, and celebrity transfers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTHENTIC CLIENT REVIEWS WALL -->
+<section class="section section-reviews" id="client-reviews">
+  <div class="container">
+    <div class="section-header text-center">
+      <div class="section-eyebrow">VERIFIED REPUTATION</div>
+      <h2 class="section-title">Google 4.9-Star Client Testimonials</h2>
+      <p class="section-lead">Trusted by corporate conglomerates, NRI families, Kolkata wedding planners, and frequent flyers.</p>
+    </div>
+    
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <div class="review-rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"Booked two Mercedes E-Class cars for our international corporate delegation visiting Kolkata. The cars were pristine, smelling fresh, and chauffeurs arrived 20 minutes prior to scheduled pickup at Park Hotel. Outstanding professionalism."</p>
+        <div class="review-author">
+          <div class="author-avatar"><i class="fas fa-user-tie"></i></div>
+          <div class="author-meta">
+            <span class="author-name">Anirban Mukherjee</span>
+            <span class="author-role">VP Operations, Tech Consulting Firm</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card">
+        <div class="review-rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"Fast Services handled our daughter's wedding fleet along with a vintage car for the groom's entry. Everything went like clockwork from the hotel to the banquet. The chauffeur was exceptionally courteous with our elders."</p>
+        <div class="review-author">
+          <div class="author-avatar"><i class="fas fa-user"></i></div>
+          <div class="author-meta">
+            <span class="author-name">Sunita Singhania</span>
+            <span class="author-role">Alipore, Kolkata</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card">
+        <div class="review-rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"I fly between London and Kolkata frequently. Fast Services is my permanent go-to for airport transfers and outstation trips to Durgapur. Their Toyota Fortuner is immaculate and the drivers are real gentlemen."</p>
+        <div class="review-author">
+          <div class="author-avatar"><i class="fas fa-plane-departure"></i></div>
+          <div class="author-meta">
+            <span class="author-name">Dr. Rahul Sen</span>
+            <span class="author-role">Consultant Cardiologist</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECT CONCIERGE INTAKE & WHATSAPP FORM -->
+<section class="section section-contact-intake" id="book-now">
+  <div class="container">
+    <div class="contact-card-box">
+      <div class="contact-text-side">
+        <div class="section-eyebrow">FAST RESERVATIONS</div>
+        <h2 class="contact-title">Direct Park Street Concierge</h2>
+        <p class="contact-lead">Need an immediate luxury vehicle dispatch or planning an upcoming corporate conference? Connect directly with our fleet manager.</p>
+        
+        <div class="quick-callout">
+          <div class="callout-icon"><i class="fas fa-bolt text-cyan"></i></div>
+          <div class="callout-info">
+            <strong>Instant Response Guarantee</strong>
+            <span>Our fleet manager responds within 5 minutes on WhatsApp with exact vehicle availability.</span>
+          </div>
+        </div>
+        
+        <div class="contact-quick-stats">
+          <div class="cqs-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <span class="cqs-label">24/7 Phone</span>
+              <a href="tel:+917980952635" class="cqs-val">+91 79809 52635</a>
+            </div>
+          </div>
+          <div class="cqs-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="cqs-label">Dispatch Base</span>
+              <span class="cqs-val">Park Street, Kolkata</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form-side">
+        <form id="directBookingForm" class="booking-form">
+          <h3 class="form-title">Reserve Your Luxury Car</h3>
+          <div class="form-group">
+            <label for="bookName">Your Name / Organization *</label>
+            <input type="text" id="bookName" class="form-control" placeholder="e.g. Rahul Sen" required>
+          </div>
+          <div class="form-group">
+            <label for="bookPhone">Contact Number *</label>
+            <input type="tel" id="bookPhone" class="form-control" placeholder="e.g. +91 98300 00000" required>
+          </div>
+          <div class="form-group">
+            <label for="bookFleet">Desired Vehicle *</label>
+            <select id="bookFleet" class="form-control" required>
+              <option value="Mercedes-Benz E-Class">Mercedes-Benz E-Class</option>
+              <option value="BMW 5 Series">BMW 5 Series</option>
+              <option value="Audi A6 Matrix">Audi A6 Matrix</option>
+              <option value="Toyota Fortuner 4x4">Toyota Fortuner 4x4</option>
+              <option value="Toyota Innova Crysta ZX">Toyota Innova Crysta ZX</option>
+              <option value="Vintage Wedding Classic">Vintage Wedding Classic</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bookDetails">Trip Details (Pickup location, date, hours)</label>
+            <textarea id="bookDetails" class="form-control" rows="3" placeholder="e.g. CCU Airport pickup on Friday 10 PM to ITC Sonar..."></textarea>
+          </div>
+          <button type="submit" class="btn-form-submit w-full">
+            <i class="fab fa-whatsapp"></i> Transmit to WhatsApp Concierge
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Executive Footer -->
+<footer class="site-footer">
+  <div class="footer-ambient-glow"></div>
+  <div class="container footer-grid">
+    <div class="footer-col brand-col">
+      <div class="brand-link mb-3">
+        <img src="assets/images/logo.png" alt="Fast Services Car Rental" class="brand-logo" width="40" height="40">
+        <div class="brand-meta">
+          <span class="brand-title text-white">FAST SERVICES</span>
+          <span class="brand-sub">LUXURY FLEET &#8226; PARK STREET</span>
+        </div>
+      </div>
+      <p class="footer-lead">Kolkata’s premier executive vehicle & chauffeur concierge. Serving corporate dignitaries, luxury wedding convoys, VIP guests, and airport fast-track transfers with pristine hospitality since 2008.</p>
+      <div class="footer-trust-badges">
+        <span class="trust-badge"><i class="fas fa-shield-alt"></i> Insured & Licensed</span>
+        <span class="trust-badge"><i class="fas fa-user-check"></i> Vetted Chauffeurs</span>
+        <span class="trust-badge"><i class="fas fa-clock"></i> 24/7 On-Call Fleet</span>
+      </div>
+    </div>
+    
+    <div class="footer-col links-col">
+      <h4 class="footer-heading">Fleet Segments</h4>
+      <ul class="footer-nav-list">
+        <li><a href="fleet.html#executive-sedans">Mercedes-Benz E-Class</a></li>
+        <li><a href="fleet.html#executive-sedans">BMW 5 Series & Audi A6</a></li>
+        <li><a href="fleet.html#premium-suvs">Toyota Fortuner 4x4</a></li>
+        <li><a href="fleet.html#premium-suvs">Toyota Innova Crysta ZX</a></li>
+        <li><a href="fleet.html#wedding-fleet">Vintage & Royal Wedding Convoys</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col links-col">
+      <h4 class="footer-heading">Concierge Lines</h4>
+      <ul class="footer-nav-list">
+        <li><a href="services.html#corporate">Corporate Accounts & Retainers</a></li>
+        <li><a href="services.html#airport">Kolkata CCU Airport Fast-Track</a></li>
+        <li><a href="services.html#wedding">Luxury Wedding Convoys</a></li>
+        <li><a href="services.html#outstation">Inter-City & Bengal Escorts</a></li>
+        <li><a href="about.html">Chauffeur Protocols</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col contact-col">
+      <h4 class="footer-heading">Park Street Dispatch</h4>
+      <p class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> Park Street Commercial Hub, Kolkata, West Bengal 700016</p>
+      <p class="footer-contact-item"><i class="fas fa-phone-alt"></i> <a href="tel:+917980952635">+91 79809 52635</a></p>
+      <p class="footer-contact-item"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/917980952635" target="_blank" rel="noopener">+91 79809 52635 (Instant Chat)</a></p>
+      <p class="footer-contact-item"><i class="fas fa-clock"></i> 24 Hours / 365 Days Operations</p>
+      <a href="contact.html" class="btn-footer-pill mt-3">Book VIP Dispatch</a>
+    </div>
+  </div>
+  
+  <div class="footer-bottom container">
+    <p>&copy; 2026 Fast Services Car Rental. All rights reserved. Park Street, Kolkata. Portfolio & Concierge Portal.</p>
+    <div class="footer-legal-links">
+      <a href="about.html#safety">Safety Vetting</a>
+      <span class="sep">&#8226;</span>
+      <a href="about.html#terms">Fleet Standard</a>
+      <span class="sep">&#8226;</span>
+      <a href="contact.html">Instant Concierge</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Action Button -->
+<a href="https://wa.me/917980952635?text=Hello%20Fast%20Services%20Car%20Rental%2C%20I%20am%20interested%20in%20reserving%20a%20luxury%20vehicle." class="floating-wa-btn" aria-label="Instant WhatsApp Booking" target="_blank" rel="noopener">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="app.js"></script>
+</body>
+</html>
